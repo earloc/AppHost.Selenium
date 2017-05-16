@@ -57,6 +57,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\packaging\nuget\AppHost.Selenium.WinForms.nuspec">
+      <Link>AppHost.Selenium.WinForms.nuspec</Link>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
