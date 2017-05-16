@@ -1,0 +1,26 @@
+<package>
+  <metadata>
+    <id>AppHost.Selenium.WinForms</id>
+    <description>AppHost.Selenium.WinForms</description>
+    <version>$version$-beta</version>
+    <authors>earloc</authors>
+    <owners>earloc</owners>
+    <projectUrl>$projectUrl$</projectUrl>
+    <copyright>2017 - earloc</copyright>
+    <tags>App Host Selenium WinForms</tags>
+    <dependencies>
+      <dependency id="Selenium.WebDriver" version="3.4.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Windows.Forms"  />
+      <frameworkAssembly assemblyName="System.Mangement"  />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="..\AppHost.Selenium.WinForms\bin\Release\AppHost.Selenium.WinForms.dll" target="lib/net40" />
+    <file src="..\AppHost.Selenium.WinForms\bin\Release\AppHost.Selenium.WinForms.dll" target="lib/net45" />
+    <file src="..\AppHost.Selenium.WinForms\bin\Release\AppHost.Selenium.WinForms.dll" target="lib/net46" />
+    <file src="..\AppHost.Selenium.WinForms\bin\Release\AppHost.Selenium.WinForms.dll" target="lib/net47" />
+  </files>
+
+</package>

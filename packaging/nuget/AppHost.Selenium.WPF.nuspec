@@ -1,0 +1,27 @@
+<package>
+  <metadata>
+    <id>AppHost.Selenium.WPF</id>
+    <description>AppHost.Selenium.WPF</description>
+    <version>$version$-beta</version>
+    <authors>earloc</authors>
+    <owners>earloc</owners>
+    <projectUrl>$projectUrl$</projectUrl>
+    <copyright>2017 - earloc</copyright>
+    <tags>App Host Selenium WPF Windows Presentation Foundation</tags>
+    <dependencies>
+      <dependency id="Selenium.WebDriver" version="3.4.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Windows.Forms"  />
+      <frameworkAssembly assemblyName="WindowsFormsIntegration"  />
+      <frameworkAssembly assemblyName="System.Mangement"  />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="..\AppHost.Selenium.WPF\bin\Release\AppHost.Selenium.WPF.dll" target="lib/net40" />
+    <file src="..\AppHost.Selenium.WPF\bin\Release\AppHost.Selenium.WPF.dll" target="lib/net45" />
+    <file src="..\AppHost.Selenium.WPF\bin\Release\AppHost.Selenium.WPF.dll" target="lib/net46" />
+    <file src="..\AppHost.Selenium.WPF\bin\Release\AppHost.Selenium.WPF.dll" target="lib/net47" />
+  </files>
+
+</package>
