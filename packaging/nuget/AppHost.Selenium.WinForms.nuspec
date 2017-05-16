@@ -5,7 +5,8 @@
     <version>$version$-beta</version>
     <authors>earloc</authors>
     <owners>earloc</owners>
-    <projectUrl>$projectUrl$</projectUrl>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/earloc/AppHost.Selenium</projectUrl>
     <copyright>2017 - earloc</copyright>
     <tags>App Host Selenium WinForms</tags>
     <dependencies>
