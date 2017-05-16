@@ -11,6 +11,7 @@
     <tags>App Host Selenium WPF Windows Presentation Foundation</tags>
     <dependencies>
       <dependency id="Selenium.WebDriver" version="3.4.0" />
+      <dependency id="AppHost.Selenium.WinForms" version="0.1.0-beta" />
     </dependencies>
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System.Windows.Forms"  />
