@@ -41,4 +41,4 @@ using System.Windows.Markup;
                                       // app, or any theme specific resource dictionaries)
 )]
 
-[assembly:XmlnsDefinition("http://www.allesclare.de/AppHost/Selenium", "AppHost.Selenium.WPF")]
+[assembly:XmlnsDefinition("https://github.com/earloc/AppHost.Selenium", "AppHost.Selenium.WPF")]
