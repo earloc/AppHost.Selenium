@@ -2,7 +2,7 @@
   <metadata>
     <id>AppHost.Selenium.WinForms</id>
     <description>AppHost.Selenium.WinForms</description>
-    <version>$version$-beta</version>
+    <version>0.1.1-beta</version>
     <authors>earloc</authors>
     <owners>earloc</owners>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
@@ -14,7 +14,7 @@
     </dependencies>
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System.Windows.Forms"  />
-      <frameworkAssembly assemblyName="System.Mangement"  />
+      <frameworkAssembly assemblyName="System.Management"  />
     </frameworkAssemblies>
   </metadata>
   <files>

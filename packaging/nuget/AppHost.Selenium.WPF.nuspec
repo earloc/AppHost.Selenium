@@ -2,7 +2,7 @@
   <metadata>
     <id>AppHost.Selenium.WPF</id>
     <description>AppHost.Selenium.WPF</description>
-    <version>$version$-beta</version>
+    <version>0.1.1-beta</version>
     <authors>earloc</authors>
     <owners>earloc</owners>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
@@ -16,7 +16,7 @@
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System.Windows.Forms"  />
       <frameworkAssembly assemblyName="WindowsFormsIntegration"  />
-      <frameworkAssembly assemblyName="System.Mangement"  />
+      <frameworkAssembly assemblyName="System.Management"  />
     </frameworkAssemblies>
   </metadata>
   <files>

@@ -59,12 +59,12 @@ namespace AppHost.Selenium.WinForms {
 
             _BrowserHandle = browserProcess.MainWindowHandle;
 
+            UnsafeNativeMethods.SetParent(_BrowserHandle.Value, this.Handle);
+            UnsafeNativeMethods.MoveWindow(_BrowserHandle.Value, 0, 0, Width, Height, true);
+
             this.Resize += (sender, e) => {
                 UnsafeNativeMethods.MoveWindow(_BrowserHandle.Value, 0, 0, Width, Height, true);
             };
-
-            UnsafeNativeMethods.SetParent(_BrowserHandle.Value, this.Handle);
-            UnsafeNativeMethods.MoveWindow(_BrowserHandle.Value, 0, 0, Width, Height, true);
         }
     }
 }
