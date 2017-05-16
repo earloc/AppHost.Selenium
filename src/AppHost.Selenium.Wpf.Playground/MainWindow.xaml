@@ -1,0 +1,30 @@
+﻿<Window x:Class="AppHost.Selenium.Wpf.Playground.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppHost.Selenium.Wpf.Playground"
+        xmlns:sh="https://github.com/earloc/AppHost.Selenium"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin"
+                    Value="5" />
+            <Setter Property="Padding"
+                    Value="5,0" />
+        </Style>
+    </Window.Resources>
+        <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Left">
+            <Button x:Name="_btnLoadChrome"
+                    Click="_btnLoadChrome_Click">load Chrome</Button>
+            <Button x:Name="_btnLoadFireFox"
+                    Click="_btnLoadFireFox_Click">load FireFox</Button>
+            <Button x:Name="_btnLoadInternetExplorer"
+                    Click="_btnLoadInternetExplorer_Click">load IE</Button>
+        </StackPanel>
+
+        <sh:SeleniumHost x:Name="_SeleniumHost" />
+        </DockPanel>
+</Window>
