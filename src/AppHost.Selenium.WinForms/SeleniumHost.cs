@@ -19,6 +19,13 @@ namespace AppHost.Selenium.WinForms {
 
             [DllImport("user32.dll", SetLastError = true)]
             public static extern bool MoveWindow(IntPtr hWnd, int X, int Y, int nWidth, int nHeight, bool bRepaint);
+
+            [DllImport("user32.dll")]
+            public static extern int SetWindowLong(IntPtr hWnd, int nIndex, uint dwNewLong);
+            public const int GWL_STYLE = -16;
+            public const uint WS_POPUP = 0x80000000;
+            public const uint WS_MAXIMIZE = 0x01000000;
+            public const uint WS_DISABLED = 0x08000000;
         }
 
         public SeleniumHost() {
@@ -60,6 +67,7 @@ namespace AppHost.Selenium.WinForms {
             _BrowserHandle = browserProcess.MainWindowHandle;
 
             UnsafeNativeMethods.SetParent(_BrowserHandle.Value, this.Handle);
+            //UnsafeNativeMethods.SetWindowLong(_BrowserHandle.Value, UnsafeNativeMethods.GWL_STYLE, UnsafeNativeMethods.WS_DISABLED);
             UnsafeNativeMethods.MoveWindow(_BrowserHandle.Value, 0, 0, Width, Height, true);
 
             this.Resize += (sender, e) => {
